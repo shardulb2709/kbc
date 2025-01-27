@@ -30,9 +30,11 @@ jobs:
           ls -R
           echo "PYTHONPATH: $PYTHONPATH"
 
+      - name: Check for import errors
+        run: |
+          python -c "from my_module import my_function"
+
       - name: Run tests
         run: |
           export PYTHONPATH=$PYTHONPATH:$(pwd)/src
-           export PYTHONPATH=$PYTHONPATH:$(pwd)/src
-            pytest -v
-        
+          pytest tests/ -v
