@@ -34,5 +34,5 @@ jobs:
         run: |
           export PYTHONPATH=$PYTHONPATH:$(pwd)/src
            export PYTHONPATH=$PYTHONPATH:$(pwd)/src
-            pytest tests/ -v
+            pytest -v
         
