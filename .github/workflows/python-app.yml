@@ -31,6 +31,7 @@ jobs:
 
       - name: Check for import errors
         run: |
+          cd /path/to/module
           python -c "from my_module import my_function"
 
       - name: Run tests
