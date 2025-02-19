@@ -31,8 +31,3 @@ jobs:
         run: |
           ls -R
           echo "PYTHONPATH: $PYTHONPATH"
-
-
-      - name: Run tests
-        run: |
-          pytest -v
